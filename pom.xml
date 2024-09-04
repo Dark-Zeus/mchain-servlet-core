@@ -5,7 +5,7 @@
 
   <groupId>me.sunera</groupId>
   <artifactId>mchain-servlet-core</artifactId>
-  <version>1.0.0-BETA0-SNAPSHOT</version>
+  <version>1.0.0-BETA0</version>
   <packaging>jar</packaging>
 
   <name>mchain-servlet-core</name>
@@ -36,6 +36,7 @@
     <connection>scm:git:https://git@github.com/Dark-Zeus/mchain-servlet-core.git</connection>
     <developerConnection>scm:git:https://git@github.com/Dark-Zeus/mchain-servlet-core.git</developerConnection>
     <url>https://github.com/Dark-Zeus/mchain-servlet-core</url>
+    <tag>mchain-servlet-core-1.0.0-BETA0</tag>
   </scm>
   
 
