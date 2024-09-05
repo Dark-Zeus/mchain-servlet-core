@@ -1,5 +1,9 @@
 # MChain Middleware Framework
 
+![Maven Central](https://img.shields.io/badge/dynamic/xml?label=Maven%20Central&url=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fme%2Fsunera%2Fmchain-servlet-core%2Fmaven-metadata.xml&query=%2Fmetadata%2Fversioning%2Flatest)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Dark-Zeus/mchain-servlet-core?label=Github%20Release)
+
+
 **MChain** is a Java framework for managing middleware chains in Jakarta Servlets. It allows you to create a series of middleware components that process HTTP requests and responses in a chain, making it easy to handle common tasks such as authentication, logging, and response formatting.
 
 ## License
@@ -15,30 +19,32 @@ This project is licensed under the [GNU General Public License (GPL) v3.0](https
 
 To use the MChain framework, you'll need a Jakarta Servlet container (such as Apache Tomcat) and a Java development environment.
 
-You can either build the framework from source or download a pre-built JAR file. After that, you can import the MChain package into your project.
+You can either build the framework from source, download a pre-built JAR file, or include it in your project via a dependency management tool like Maven or Gradle.
+
 
 ```java
 import me.sunera.mchain.servlet;
 ```
+### 1. Using MChain as a Dependency
+You can easily include MChain in your project by adding it as a dependency in your build tool.
 
-### 1. Build it Yourself
+1. **Using Maven**
+Add the following to your pom.xml file:
 
-1. **Clone the Repository:**
+    ```xml
+    <dependency>
+        <groupId>me.sunera.mchain</groupId>
+        <artifactId>mchain-servlet-core</artifactId>
+        <version>[VERSION]</version> <!-- Use the version you prefer -->
+    </dependency>
+    ```
 
-   ```bash
-   git clone https://github.com/Dark-Zeus/mchain-servlet-core
-   cd your-repository
-   ```
+2. **Using Gradle**
+Add the following to your build.gradle file:
 
-2. **Build the Project:**
-
-   Make sure you have Maven installed. Run the following command to build the project:
-
-   ```bash
-   mvn clean install
-   ```
-
-   This will compile the code and package it into a JAR file.
+    ```gradle
+    implementation 'me.sunera.mchain:mchain-servlet-core:[VERSION]' //Use the version you prefer
+    ```
 
 ### 2. Using MChain Standalone JAR
 
@@ -56,6 +62,25 @@ To use MChain as a standalone JAR, follow these steps:
 
         * Eclipse: Right-click your project > Properties > Java Build Path > Libraries > Add JARs or Add External JARs.
         * IntelliJ IDEA: Right-click your project > Open Module Settings > Libraries > + > Java and select the JAR file.
+
+### 3. Build it Yourself
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/Dark-Zeus/mchain-servlet-core
+   cd your-repository
+   ```
+
+2. **Build the Project:**
+
+   Make sure you have Maven installed. Run the following command to build the project:
+
+   ```bash
+   mvn clean install
+   ```
+
+   This will compile the code and package it into a JAR file.
 
 ### Usage
 
